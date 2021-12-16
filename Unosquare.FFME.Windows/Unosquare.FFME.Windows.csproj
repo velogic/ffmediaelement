@@ -53,7 +53,8 @@
     </PackageReleaseNotes>
     <RepositoryUrl>https://github.com/unosquare/ffmediaelement</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-
+<!--    https://github.com/dotnet/msbuild/issues/4704-->
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
 
   <ItemGroup>
@@ -87,6 +88,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+<!--    https://github.com/dotnet/msbuild/issues/4704-->
+    <PackageReference Include="System.Resources.Extensions" Version="4.6.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.0' AND '$(TargetFramework)' != 'netcoreapp3.1' AND '$(TargetFramework)' != 'net5.0-windows'">
@@ -101,5 +104,6 @@
   <Import Project="..\Unosquare.FFME.MediaElement\Unosquare.FFME.MediaElement.projitems" Label="Shared" />
 
   <Import Project="..\Unosquare.FFME\Unosquare.FFME.projitems" Label="Shared" />
-
+  
+            
 </Project>
