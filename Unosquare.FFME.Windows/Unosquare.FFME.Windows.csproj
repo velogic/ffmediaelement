@@ -29,8 +29,8 @@
     <NeutralLanguage>en</NeutralLanguage>
 
     <!-- Assembly Version Information -->
-    <AssemblyVersion>4.4.360.0</AssemblyVersion>
-    <FileVersion>4.4.360.0</FileVersion>
+    <AssemblyVersion>4.4.365.0</AssemblyVersion>
+    <FileVersion>4.4.365.0</FileVersion>
 
     <!-- NuGet Package Properties -->
     <!-- https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target -->
